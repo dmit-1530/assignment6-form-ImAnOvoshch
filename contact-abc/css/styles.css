@@ -1,8 +1,39 @@
+:root {
+    --accent-colour: #EA580C;
+    --form-field-outilne: #C1C4C8;
+    --accent-hover: #CB4E0B;
+}
+
+/* Utility */
+
 body {
     background-color: #F2F6FA;
-    font-family: "Noto Sans Bhaiksuki", sans-serif;
+    font-family: "Noto Sans Bengali", sans-serif;
 }
 
 .container {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
 }
+
+/* Typography */
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+    border-left: 5px solid var(--accent-hover);
+    border-bottom: 3px solid var(--accent-hover);
+    width: fit-content;
+    padding-left: .25rem;
+    margin-bottom: 1.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* Form Styling */
+
