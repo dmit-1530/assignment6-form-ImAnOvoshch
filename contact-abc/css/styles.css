@@ -70,6 +70,7 @@ form fieldset div label {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
+    cursor: pointer;
 }
 
 form fieldset div label span {
@@ -79,6 +80,7 @@ form fieldset div label span {
 form input[type="radio"] {
     width: 0.875rem;
     height: 0.875rem;
+    accent-color: var(--accent-hover);
 }
 
 form textarea {
@@ -112,6 +114,7 @@ input[type="submit"] {
     color: #F5F5F5;
     padding: 1.125rem;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Deconstructed Pancake */
@@ -125,4 +128,17 @@ fieldset div {
 
 fieldset div label {
     flex: 1 1 13.0625rem;
+}
+
+/* Hover States and Interactions */
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active {
+    background-color: var(--accent-hover);
+}
+
+fieldset label:has(input[type="radio"]:checked) {
+    background-color: var(--accent-hover);
+    color: white;
 }
