@@ -40,6 +40,7 @@ header p {
 form {
     background-color: #ffffff;
     padding: 2rem 1rem;
+    width: 100%;
 }
 
 form input:not(input[type="submit"], input[type="radio"]) {
@@ -127,7 +128,7 @@ fieldset div {
 }
 
 fieldset div label {
-    flex: 1 1 13.0625rem;
+    flex: 1 1 14.5rem;
 }
 
 /* Hover States and Interactions */
@@ -159,5 +160,27 @@ header {
     .inner-header-container div,
     .inner-header-container img {
         width: calc((100% / 2) - (1rem / 2));
+    }
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 75rem) {
+    .container {
+        display: flex;
+        column-gap: 2.5rem;
+    }
+
+    .container header {
+        max-width: 31.25rem;
+        container-type: unset;
+    }
+}
+
+@media screen and (min-width: 103.75rem) {
+    .container {
+        max-width: 97.5rem;
+        margin: 0 auto;
     }
 }
